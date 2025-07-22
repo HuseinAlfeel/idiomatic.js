@@ -35,14 +35,42 @@
 
 ## "كل الكود في أي مشروع برمجي يجب أن يبدو وكأن شخصاً واحداً قام بكتابته، بغض النظر عن عدد المطورين الذين ساهموا فيه."
 
-### Das folgende Dokument zeigt Praktiken, die sich in jedem Code, den ich ursprünglich geschrieben habe, wiederfinden. Sämtliche Beiträge für Projekte, die ich kreiert habe, sollten diesen Praktiken folgen.
-
-### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte dieser respektiert werden.
-
-> "Dass es eine schlechte Idee ist, nur für sich selbst Code zu schreiben, ist etwas, was man als guter Betreuer eines erfolgreichen Projektes begreifen muss™. Wenn tausende Leute deinen Code benutzen, dann schreibe deinen Code möglichst klar und übersichtlich, nicht einfach nur nach deinen persönlichen Vorlieben." - Idan Gazit
 
 
-## Übersetzungen
+### هذا المستند يحدد الممارسات التي أتبعها في كل كود أكون المؤلف الأصلي له. المساهمات في المشاريع التي أنشأتها يجب أن تتبع هذه الإرشادات.
+
+### لست أحاول فرض تفضيلاتي الشخصية على كود الآخرين أو مشاريعهم؛ إذا كان هناك أسلوب شائع موجود، فيجب احترامه.
+
+
+ريبيكا مورفي (Rebecca Murphey)
+
+### "جزء من كونك راعياً جيداً لمشروع ناجح هو إدراك أن كتابة الكود لنفسك فقط فكرة سيئة™. إذا كان آلاف الأشخاص يستخدمون كودك، فاكتب كودك للوضوح الأقصى، وليس حسب تفضيلك الشخصي لكيفية الذكاء ضمن المواصفات."
+
+إيدان غازيت (Idan Gazit)
+
+### "أن كتابة الكود لنفسك فقط فكرة سيئة، هو أمر يجب على كل مشرف جيد لمشروع ناجح أن يدركه™. عندما يستخدم آلاف الأشخاص كودك، اكتب كودك بأقصى وضوح ممكن، وليس فقط حسب تفضيلاتك الشخصية."
+
+
+## v3∙LatestCopyPublishمبادئ كتابة الجافاسكريبت المتسقة والاصطلاحية
+هذا مستند حي ومتطور، والأفكار الجديدة لتحسين الكود الذي نكتبه مرحب بها دائماً.
+ساهم معنا: انسخ المستودع (fork)، استنسخ (clone)، أنشئ فرعاً (branch)، أرسل التزاماتك (commit)، ادفع التغييرات (push)، أرسل طلب دمج (pull request).
+
+فلسفة المشروع الأساسية
+
+"كل الكود في أي مشروع برمجي يجب أن يبدو وكأن شخصاً واحداً قام بكتابته، بغض النظر عن عدد المطورين الذين ساهموا فيه."
+
+هذا المستند يحدد الممارسات التي أتبعها في كل كود أكون المؤلف الأصلي له. المساهمات في المشاريع التي أنشأتها يجب أن تتبع هذه الإرشادات.
+لست أحاول فرض تفضيلاتي الشخصية على كود الآخرين أو مشاريعهم؛ إذا كان هناك أسلوب شائع موجود، فيجب احترامه.
+ريبيكا مورفي (Rebecca Murphey)
+
+"جزء من كونك راعياً جيداً لمشروع ناجح هو إدراك أن كتابة الكود لنفسك فقط فكرة سيئة™. إذا كان آلاف الأشخاص يستخدمون كودك، فاكتب كودك للوضوح الأقصى، وليس حسب تفضيلك الشخصي لكيفية الذكاء ضمن المواصفات."
+
+إيدان غازيت (Idan Gazit)
+
+"أن كتابة الكود لنفسك فقط فكرة سيئة، هو أمر يجب على كل مشرف جيد لمشروع ناجح أن يدركه™. عندما يستخدم آلاف الأشخاص كودك، اكتب كودك بأقصى وضوح ممكن، وليس فقط حسب تفضيلاتك الشخصية."
+
+
+## الترجمات المتاحة
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
 * [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
@@ -60,10 +88,12 @@
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
 * [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)
+* [العربية](https://github.com/rwaldron/idiomatic.js/tree/master/translations/ar_AR)
 
-## Wichtiger, nicht-idiomatischer Kram:
+## محتوى مهم، غير متعلق بالأسلوب الاصطلاحي:
 
-### Code-Qualität: Tolle Werkzeuge, Ressourcen und Referenzen
+
+### جودة الكود: أدوات رائعة، موارد ومراجع
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) für [Sonar](http://www.sonarsource.org/)
  * [Plato](https://github.com/jsoverson/plato)
@@ -78,11 +108,12 @@
 [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
-### Schlau werden
+### التعلم المتقدم
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Bei den folgenden Ressourcen sollte berücksichtigt werden, dass sie 1) unvollständig und 2) *PFLICHTLEKTÜREN* sind. Ich stimme dem beschriebenen Style der unten stehenden Autoren nicht immer zu, aber eins ist sicher: Sie sind konsequent. Außerdem sind dies echte Autoritäten in dieser Sprache.
+
+يجب اعتبار المراجع التالية: 1) غير مكتملة، و 2) قراءة إجبارية. لا أتفق دائماً مع الأسلوب المكتوب من قبل المؤلفين أدناه، لكن شيئاً واحداً مؤكد: إنهم متسقون. علاوة على ذلك، هؤلاء هم سلطات حقيقية في هذه اللغة.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -92,13 +123,16 @@ Bei den folgenden Ressourcen sollte berücksichtigt werden, dass sie 1) unvollst
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
-### Build- und Deployment-Prozess
+### عملية البناء والنشر
 
-Jedes Projekt sollte Komponenten verwenden, um den Code zu linten, testen oder komprimieren, um so im Produktivbereich eingesetzt zu werden. Ben Alan hat für diese Aufgabe [grunt](https://github.com/cowboy/grunt) entworfen und damit offiziell das "kits/" Verzeichnis aus diesem Repository ersetzt.
 
-### Hilfsmittel zum Testen
+يجب على كل مشروع استخدام مكونات لفحص الكود (lint) واختباره وضغطه للاستخدام في بيئة الإنتاج. بن آلان صمم grunt لهذه المهمة [grunt](https://github.com/cowboy/grunt) وقد حل رسمياً محل مجلد "kits/" في هذا المستودع (Repository).
 
-Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Functional-Testing enthalten. Demonstrationen von Anwendungsfällen reichen als Test nicht aus. Die unten aufgeführte Liste beinhaltet eine Menge nützlicher Test-Frameworks.
+
+### أدوات الاختبار
+
+
+المشاريع يجب أن تحتوي على نوع من اختبارات الوحدة (Unit) أو المرجعية (Reference) أو التنفيذ (Implementation) أو الوظيفية (Functional). العروض التوضيحية لحالات الاستخدام لا تكفي كاختبارات. القائمة أدناه تحتوي على مجموعة من أطر عمل الاختبار المفيدة.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -108,72 +142,173 @@ Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Fun
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
 
-## Inhaltsverzeichnis
+## فهرس المحتويات
 
- * [Whitespace](#whitespace)
- * [Schöne Syntax](#spacing)
- * [Typprüfung](#type)
- * [Bedingte Auswertungen](#cond)
- * [Praktischer Style](#practical)
- * [Bezeichnungen](#naming)
- * [Sonstiges](#misc)
- * [Native & Host Objekte](#native)
- * [Kommentare](#comments)
- * [Einsprachiger Code](#language)
+ * [المسافات البيضاء](#whitespace)
+ * [الصيغة الجميلة](#spacing)
+ * [فحص الأنواع](#type)
+ * [التقييم الشرطي](#cond)
+ * [الأسلوب العملي](#practical)
+ * [التسمية](#naming)
+ * [متفرقات](#misc)
+ * [الكائنات الأصلية والمضيفة](#native)
+ * [التعليقات](#comments)
+ * [الكود أحادي اللغة](#language)
 
 
 
 ------------------------------------------------
 
-## Vorwort
-
-Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaScript-Entwicklung. Es handelt sich dabei aber nicht etwa um eine Art Vorschrift. Das Wichtigste, was man aber mitnehmen sollte, ist das **Gesetz der Stilkonsistenz**. Egal, welchen Stil du für dein Projekt wählst, er sollte als Regel betrachtet werden.
+## تمهيد
 
 
+الأقسام التالية تحدد دليل أسلوب معقول لتطوير الجافاسكريبت الحديث وليس الهدف منها أن تكون وصفة طبية. أهم ما يجب استخلاصه هو قانون اتساق الأسلوب. مهما كان الأسلوب الذي تختاره لمشروعك، يجب اعتباره قانوناً.
 
 
 
-## Idiomatisches Style Manifest
+
+
+## بيان الأسلوب الاصطلاحي
 
 
 1. <a name="whitespace">Whitespace</a>
-    - Mische niemals Spaces und Tabs
-    - Bevor du mit einem Projekt beginnst und Code schreibst, entscheide dich zwischen Soft Intends (Spaces) oder echten Tabs.
-        - Für die Lesbarkeit empfehle ich, die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces repräsentieren einen echten Tab.
-    - Wenn dein Editor die Konfiguration "Steuerzeichen einblenden" unterstützt, solltest du sie einschalten. Das bringt folgende Vorteile mit sich:
-        - Erzwungene Konsistenz
-        - Löschen von Whitespaces am Ende der Zeile
-        - Löschen von leeren "Whitespace Zeilen"
-        - Commits und Diffs sind einfacher zu lesen
+    - لا تخلط أبداً بين المسافات والتبويبات
+    - قبل أن تبدأ مشروعاً وتكتب أي كود، اختر بين المسافات الناعمة (Soft Indents) أو التبويبات الحقيقية.
 
-2. <a name="spacing">Schöne Syntax</a>
+        - من أجل سهولة القراءة، أنصح بتعيين حجم المسافة البادئة دائماً إلى حرفين. يعني مسافتين تمثلان تبويبة حقيقية.
 
-    A. Leerzeichen, geschweifte Klammern und Zeilenumbrüche
+
+
+    - إذا كان محررك يدعم إعداد "إظهار الرموز غير المرئية"، يجب تفعيله. فوائد هذه الممارسة:
+
+        - فرض الاتساق
+        - إزالة المسافات البيضاء في نهاية السطر
+        - إزالة المسافات البيضاء من الأسطر الفارغة
+        - تسهيل قراءة الالتزامات (Commits) والاختلافات (Diffs)
+
+2. <a name="spacing">الصيغة الجميلة</a>
+
+    A. المسافات، الأقواس المجعدة، وفواصل الأسطر
 
     ```javascript
 
-    // if/else/for/while/try enthalten immer Leerzeichen, geschweifte Klammern
-    // und erstrecken sich über mehrere Zeilen
+// if/else/for/while/try تحتوي دائماً على مسافات، أقواس مجعدة
+// وتمتد عبر أسطر متعددة
     // Das trägt zur Lesbarkeit bei
 
+## محتوى مهم، غير متعلق بالأسلوب الاصطلاحي:
+
+### جودة الكود: أدوات رائعة، موارد ومراجع
+
+ * [إضافة الجافاسكريبت](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) لـ [Sonar](http://www.sonarsource.org/)
+ * [Plato](https://github.com/jsoverson/plato)
+ * [jsPerf](http://jsperf.com/)
+ * [jsFiddle](http://jsfiddle.net/)
+ * [jsbin](http://jsbin.com/)
+ * [JavaScript Lint (JSL)](http://javascriptlint.com/)
+ * [jshint](http://jshint.com/)
+ * [jslint](http://jslint.org/)
+ * [Editorconfig](http://editorconfig.org/)
+
+[الاستفادة من أدوات جودة الكود بقلم أنطون كوفاليوف](http://anton.kovalyov.net/slides/gothamjs/)
+
+
+### التعلم المتقدم
+
+[http://es5.github.com/](http://es5.github.com/)
+
+يجب اعتبار المراجع التالية: 1) غير مكتملة، و 2) *قراءة إجبارية*. لا أتفق دائماً مع الأسلوب المكتوب من قبل المؤلفين أدناه، لكن شيئاً واحداً مؤكد: إنهم متسقون. علاوة على ذلك، هؤلاء هم سلطات حقيقية في هذه اللغة.
+
+ * [خط الأساس لمطوري الواجهات الأمامية](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+ * [الجافاسكريبت البليغة](http://eloquentjavascript.net/)
+ * [جافاسكريبت، جافاسكريبت](http://javascriptweblog.wordpress.com/)
+ * [مغامرات في تطوير الجافاسكريبت](http://rmurphey.com/)
+ * [إتقان القتل](http://perfectionkills.com/)
+ * [عالم دوغلاس كروكفورد الواسع](http://www.crockford.com)
+ * [تقييم الجافاسكريبت](https://github.com/rmurphey/js-assessment)
+
+### عملية البناء والنشر
+
+يجب على كل مشروع استخدام مكونات لفحص الكود (lint) واختباره وضغطه للاستخدام في بيئة الإنتاج. بن آلان صمم [grunt](https://github.com/cowboy/grunt) لهذه المهمة وقد حل رسمياً محل مجلد "kits/" في هذا المستودع.
+
+### أدوات الاختبار
+
+المشاريع _يجب_ أن تحتوي على نوع من اختبارات الوحدة (Unit) أو المرجعية (Reference) أو التنفيذ (Implementation) أو الوظيفية (Functional). العروض التوضيحية لحالات الاستخدام لا تكفي كاختبارات. القائمة أدناه تحتوي على مجموعة من أطر عمل الاختبار المفيدة.
+
+ * [QUnit](http://github.com/jquery/qunit)
+ * [Jasmine](https://github.com/pivotal/jasmine)
+ * [Vows](https://github.com/cloudhead/vows)
+ * [Mocha](https://github.com/visionmedia/mocha)
+ * [Hiro](http://hirojs.com/)
+ * [JsTestDriver](https://code.google.com/p/js-test-driver/)
+ * [Buster.js](http://busterjs.org/)
+
+## فهرس المحتويات
+
+ * [المسافات البيضاء](#whitespace)
+ * [الصيغة الجميلة](#spacing)
+ * [فحص الأنواع](#type)
+ * [التقييم الشرطي](#cond)
+ * [الأسلوب العملي](#practical)
+ * [التسمية](#naming)
+ * [متفرقات](#misc)
+ * [الكائنات الأصلية والمضيفة](#native)
+ * [التعليقات](#comments)
+ * [الكود أحادي اللغة](#language)
+
+
+
+------------------------------------------------
+
+## تمهيد
+
+الأقسام التالية تحدد دليل أسلوب معقول لتطوير الجافاسكريبت الحديث وليس الهدف منها أن تكون وصفة طبية. أهم ما يجب استخلاصه هو **قانون اتساق الأسلوب**. مهما كان الأسلوب الذي تختاره لمشروعك، يجب اعتباره قانوناً.
+
+
+
+
+
+## بيان الأسلوب الاصطلاحي
+
+
+1. <a name="whitespace">المسافات البيضاء</a>
+    - لا تخلط أبداً بين المسافات والتبويبات
+    - قبل أن تبدأ مشروعاً وتكتب أي كود، اختر بين المسافات الناعمة (Soft Indents) أو التبويبات الحقيقية.
+        - من أجل سهولة القراءة، أنصح بتعيين حجم المسافة البادئة دائماً إلى حرفين. يعني مسافتين تمثلان تبويبة حقيقية.
+    - إذا كان محررك يدعم إعداد "إظهار الرموز غير المرئية"، يجب تفعيله. فوائد هذه الممارسة:
+        - فرض الاتساق
+        - إزالة المسافات البيضاء في نهاية السطر
+        - إزالة المسافات البيضاء من الأسطر الفارغة
+        - تسهيل قراءة الالتزامات (Commits) والاختلافات (Diffs)
+
+2. <a name="spacing">الصيغة الجميلة</a>
+
+    أ. المسافات، الأقواس المجعدة، وفواصل الأسطر
+
+    ```javascript
+
+    // if/else/for/while/try تحتوي دائماً على مسافات، أقواس مجعدة
+    // وتمتد عبر أسطر متعددة
+    // هذا يساهم في سهولة القراءة
+
     // 2.A.1.1
-    // Beispiele von echt verkrampfter Syntax
+    // أمثلة على صيغة مكتظة جداً
 
-    if(Bedingung) machWas();
+    if(Condition) doSomething();
 
-    while(Bedingung) iterieren++;
+    while(condition) iterating++;
 
-    for(var i=0;i<100;i++) irgendeineIterativeFunktion();
+    for(var i=0;i<100;i++) someIterativeFn();
 
 
     // 2.A.1.1
-    // Benutze Whitespaces um die Lesbarkeit zu verbessern
+    // استخدم المسافات البيضاء لتحسين سهولة القراءة
 
-    if ( Bedingung ) {
+    if ( condition ) {
       // statements
     }
 
-    while ( Bedingung ) {
+    while ( condition ) {
       // statements
     }
 
@@ -181,7 +316,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
       // statements
     }
 
-    // Noch besser:
+    // أفضل:
 
     var i,
         length = 100;
@@ -190,7 +325,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
       // statements
     }
 
-    // Oder...
+    // أو...
 
     var i = 0,
         length = 100;
@@ -213,796 +348,682 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```
 
 
-    B. Zuweisungen, Deklarationen, Funktionen (Benamte, Ausdrücke, Kontruktoren)
-
-    ```javascript
-
-    // 2.B.1.1
-    // Variablen
-    var foo = "bar",
-        num = 1,
-        undef;
-
-    // Literalnotationen:
-
-    var array = [],
-        object = {};
+    ب. التخصيصات، التصريحات، الدوال (المسماة، التعبيرات، المنشئات)
 
 
-    // 2.B.1.2
-    // Nur einmal `var` pro Scope (Funktion) zu verwenden, verbessert die Lesbarkeit
-    // und hält deine Deklarationsliste frei von Verwirrungen
 
-    // Schlecht
-    var foo = "";
-    var bar = "";
-    var qux;
 
-    // Gut
-    var foo = "",
-        bar = "",
-        quux;
+ 
 
-    // Oder..
-    var // Hier kommentieren
-    foo = "",
+  ```javascript
+
+// 2.B.1.1
+// المتغيرات
+var foo = "bar",
+    num = 1,
+    undef;
+
+// التعبيرات الحرفية:
+var array = [],
+    object = {};
+
+// 2.B.1.2
+// استخدام `var` واحد فقط لكل نطاق (دالة) يحسن من القابلية للقراءة
+// ويحافظ على قائمة التصريحات خالية من التشويش
+
+// سيء
+var foo = "";
+var bar = "";
+var qux;
+
+// جيد
+var foo = "",
     bar = "",
     quux;
 
-    // 2.B.1.3
-    // var Statements sollten immer an den Anfang ihres respektiven Scopes (Funktion)
-    // Das gleiche gilt für const und let aus ECMAScript 6
+// أو..
+var // تعليق هنا
+foo = "",
+bar = "",
+quux;
 
-    // Schlecht
-    function foo() {
-      // irgendwas
+// 2.B.1.3
+// عبارات var يجب أن تكون دائماً في بداية النطاق المعني (الدالة)
+// نفس الشيء ينطبق على const و let من ECMAScript 6
 
-        var bar = "",
-            qux;
-    }
+// سيء
+function foo() {
+  // شيء ما
+  var bar = "",
+      qux;
+}
 
-    // Gut
-    function foo() {
-      var bar = "",
+// جيد
+function foo() {
+  var bar = "",
       qux;
 
-         // alle Statements nach der var-Deklaration
-    }
-    ```
-
-    ```javascript
-
+  // كل العبارات بعد تصريح var
+}
     // 2.B.2.1
-    // Benannte Funktionsdeklaration
-    function foo( arg1, argN ) {
+// تصريح الدالة المسماة
+function foo( arg1, argN ) {
+}
 
-    }
+// الاستخدام
+foo( arg1, argN );
 
-    // Benutzung
-    foo( arg1, argN );
+// 2.B.2.2
+// تصريح الدالة المسماة
+function square( number ) {
+  return number * number;
+}
 
+// الاستخدام
+square( 10 );
 
-    // 2.B.2.2
-    // Benannte Funktionsdeklaration
-    function quadrat(zahl) {
-      return zahl * zahl;
-    }
+// أسلوب تمرير الاستمرارية المتكلف حقاً
+function square( number, callback ) {
+  callback( number * number );
+}
 
-    // Benutzung
-    quadrat( 10 );
+square( 10, function( square ) {
+  // عبارات callback
+});
 
-    function quadrat( zahl, callback ) {
-      callback( zahl * zahl);
-    }
+// 2.B.2.3
+// تعبير الدالة
+var square = function( number ) {
+  // إرجاع شيء قيم ومتعلق
+  return number * number;
+};
 
-    quadrat( 10, function (square) {
-      // callback Statements
-    });
+// تعبير الدالة مع المعرف
+// هذا الشكل المفضل له القيمة المضافة لكونه
+// قادر على استدعاء نفسه وله هوية في تتبع المكدس:
+var factorial = function factorial( number ) {
+  if ( number < 2 ) {
+    return 1;
+  }
 
-    // 2.B.2.3
-    // Funktionsausdruck
-    var quadrat = function ( zahl ) {
-      // gibt irgendwas zurück
-      return zahl * zahl;
-    }
+  return number * factorial( number - 1 );
+};
 
-    // Funktionsausdruck mit Bezeichner
-    // Diese Form hat den Vorteil, dass sie sich selbst aufrufen kann
-    // und der Bezeichner im Stack Trace zufinden ist
-    var factorial = function factorial( zahl ) {
-      if ( zahl < 2 ) {
-        return 1;
-      }
+// 2.B.2.4
+// تصريح المنشئ
+function FooBar( options ) {
+  this.options = options;
+}
 
-        return zahl * factorial( zahl-1 );
-    };
+// الاستخدام
+var fooBar = new FooBar({ a: "alpha" });
 
+fooBar.options;
+// { a: "alpha" }
+C. الاستثناءات، الانحرافات الطفيفة
+javascript// 2.C.1.1
+// الدوال مع callbacks
+foo(function() {
+  // لاحظ عدم وجود مسافة إضافية بين القوس الأول
+  // لاستدعاء الدالة المنفذة وكلمة "function"
+});
 
-    // 2.B.2.4
-    // Konstrukturdeklaration
-    function fooBar ( options) {
+// دالة تقبل مصفوفة، بدون مسافة
+foo([ "alpha", "beta" ]);
 
-        this.options = options;
-    }
+// 2.C.1.2
+// دالة تقبل كائناً، بدون مسافة
+foo({
+  a: "alpha",
+  b: "beta"
+});
 
-    // Benutzung
-    var fooBar = new FooBar({ a: "alpha" });
+// حرف string واحد، بدون مسافة
+foo("bar");
 
-    fooBar.options:
-    // { a: "alpha" }
-    ```
-
-    C. Ausnahmen, Leichte Abweichungen
-
-    ```javascript
-
-    // 2.C.1.1
-    // Funktionen mit Callbacks
-    foo(function() {
-      // Achte darauf, dass es hier keinen extra Whitespace nach der ersten Klammer gibt
-    });
-
-    // Funktionen, die ein Array erwarten, haben keine Whitespaces auf erster Ebene
-    foo([ "alpha", "beta" ]);
-
-    // 2.C.1.2
-    // Funktionen, die ein Object erwarten, haben ebenfalls keine Spaces
-    foo({
-      a: "alpha",
-      b: "beta"
-    });
-
-    // Einzelner Stringliteral, kein Space
-    foo("bar");
-
-    // Inner gruppierte Klammern, kein Space
-    if ( !("foo" in obj) ) {
-
-    }
+// أقواس التعبير، بدون مسافة
+if ( !("foo" in obj) ) {
+  obj = (obj.bar || defaults).baz;
+}
 
     ```
 
-    D. Konsistenz gewinnt immer
+    D. الاتساق يفوز دائماً
 
-    In Sektion 2.A-2.C, sieht man den Vorteil durch die Verwendung von Whitespaces, Lesbarkeit und Konsistenz.
-    Es ist immer wichtig darauf zu achten, Formatierung-Vorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
+في الأقسام 2.A-2.C، نرى الميزة من استخدام المسافات البيضاء والقابلية للقراءة والاتساق.
+من المهم دائماً اعتبار تفضيلات التنسيق، مثل المسافات البيضاء داخل الأقواس، كخيارات اختيارية. ومع ذلك، يجب أن يمتد تنسيق واحد بشكل موحد عبر كامل النص المصدري.
 
-    ```javascript
+```javascript
 
-    // 2.D.1.1
+// 2.D.1.1
 
-    if (Bedingung) {
-      // statements
-    }
+if (condition) {
+  // statements
+}
 
-    while (Bedingung) {
-      // statements
-    }
+while (condition) {
+  // statements
+}
 
-    for (var i = 0; i < 100; i++) {
-      // statements
-    }
+for (var i = 0; i < 100; i++) {
+  // statements
+}
 
-    if (true) {
-      // statements
-    } else {
-      // statements
-    }
+if (true) {
+  // statements
+} else {
+  // statements
+}
     ```
 
-    E. Anführungszeichen
+   E. علامات الاقتباس
+سواء كنت تفضل علامات الاقتباس المفردة أو المزدوجة فلا يهم على الإطلاق. الجافاسكريبت يفسرها بنفس الطريقة دائماً. الشيء الوحيد الذي يجب الانتباه إليه بالتأكيد هو الاتساق. لا تخلط أبداً علامات الاقتباس داخل مشروع واحد. اختر أسلوباً والتزم به.
+F. نهايات الأسطر والأسطر الفارغة
+المسافات البيضاء يمكن أن تدمر الاختلافات (diffs). يمكن استخدام خطافات ما قبل الالتزام (Pre-Commit-Hooks) لإزالة المسافات البيضاء في نهاية الأسطر والأسطر الفارغة.
 
-    Ob du jetzt einfache oder doppelte Anführungszeichen bevorzugst ist völlig egal. JavaScript parst sie immer gleich. Das Einzige, worauf auf jeden Fall geachtet werden **MUSS**, ist Konsistenz. **Vermische niemals Anführungszeichen innerhalb eines Projekts.** Suche dir einen Stil aus und bleib dabei.
+<a name="type">فحص الأنواع</a>
+A. الأنواع الأولية
+String:
+ typeof variable === "string"
+Number:
+ typeof variable === "number"
+Boolean:
+ typeof variable === "boolean"
+Object:
+ typeof variable === "object"
+Array:
+ Array.isArray( arrayLikeObject )
+ (عند الإمكان)
+Node:
+ elem.nodeType === 1
+null:
+ variable === null
+null أو undefined:
+ variable == null
+undefined:
+ المتغيرات العامة:
 
-    F. Zeilenenden und leere Zeilen
+     typeof variable === "undefined"
 
-    Whitespaces können diffs ruinieren. Pre-Commit-Hooks können verwendet werden, um End-Of-Line-Whitespaces zu leere Zeilen zu entfernen.
+ المتغيرات المحلية:
 
-3. <a name="type">Typprüfung</a>
+     variable === undefined
 
-    A. Primitive Typen
+ الخصائص:
 
-    String:
+     object.prop === undefined
+     object.hasOwnProperty( prop )
+     "prop" in object
+B. الأنواع المُجبرة
+لنعتبر التأثيرات التالية...
+هذا الـ HTML مُعطى:
+html
+<input type="text" id="foo-input" value="1">
+js
+// 3.B.1.1
 
-        typeof variable === "string"
+// `foo` تم تعريفه بالقيمة `0` وهو من النوع `number`
+var foo = 0;
 
-    Number:
+// typeof foo;
+// "number"
+...
 
-        typeof variable === "number"
+// لاحقاً في الكود يجب عليك استبدال `foo` بقيمة جديدة من عنصر input
+foo = document.getElementById("foo-input").value;
 
-    Boolean:
+// إذا كنت تريد الآن الاختبار باستخدام `typeof foo`، ستكون النتيجة `string`
+// هذا يعني، إذا كان لديك منطق يختبر `foo` هكذا:
 
-        typeof variable === "boolean"
+if ( foo === 1 ) {
 
-    Object:
+    importantFunction();
 
-        typeof variable === "object"
+}
 
-    Array:
+// `importantFunction()` لن يتم تنفيذها أبداً، حتى لو كان `foo` له القيمة "1"
 
-        Array.isArray( arrayArtigesObjekt )
-        (wenn möglich)
+// 3.B.1.2
 
-    Node:
+// يمكنك تجنب هذه المشاكل عن طريق إجبار الأنواع باستخدام العمليات الأحادية + أو -:
 
-        elem.nodeType === 1
+foo = +document.getElementById("foo-input").value;
+//    ^ العامل الأحادي + يحول المعامل الأيمن إلى رقم (Number)
+// typeof foo;
+// "number"
 
-    null:
+if ( foo === 1 ) {
 
-        variable === null
+    importantFunction();
 
-    null oder undefined:
+}
 
-        variable == null
+// `importantFunction()` سيتم تنفيذها
+هنا بعض الحالات التي تُستخدم فيها الإجبارات:
+javascript
+// 3.B.2.1
 
-    undefined:
+var number = 1,
+    string = "1",
+    bool = false;
 
-        Globale Variablen:
+number;
+// 1
 
-            typeof variable === "undefined"
+number + "";
+// "1"
 
-        Lokale Variablen:
+string;
+// "1"
 
-            variable === undefined
++string;
+// 1
 
-        Properties:
++string++;
+// 1
 
-            object.prop === undefined
-            object.hasOwnProperty( prop )
-            "prop" in object
+string;
+// 2
 
-    B. Gezwungene Typen
+bool;
+// false
 
-    Betrachten wir folgende Auswirkungen...
++bool;
+// 0
 
-    Dieses HTML ist gegeben:
+bool + "";
+// "false"
+javascript// 3.B.2.2
 
-    ```html
+var number = 1,
+    string = "1",
+    bool = true;
 
-    <input type="text" id="foo-input" value="1">
-    ```
+string === number;
+// false
 
-    ```js
+string === number + "";
+// true
 
-    // 3.B.1.1
++string === number;
+// true
 
-    // `foo` wurde mit dem Wert `0` deklariert und ist vom Typ `number`
-    var foo = 0;
+bool === number;
+// false
 
-    // typeof foo;
-    // "number"
-    ...
++bool === number;
+// true
 
-    // Später im Code musst du `foo` mit einem neuen Wert aus dem input-Element überschreiben
-    foo = document.getElementById("foo-input").value;
+bool === string;
+// false
 
-    // Wenn du jetzt mit `typeof foo` testen möchtest, wird das Ergebnis `string` sein
-    // Das bedeutet, wenn du Logik hast, die `foo` so testet:
+bool == !!string;
+// true
+javascript// 3.B.2.3
 
-    if ( foo === 1 ) {
+var array = [ "a", "b", "c" ];
 
-        wichtigeFunktion();
+!!~array.indexOf("a");
+// true
 
-    }
+!!~array.indexOf("b");
+// true
 
-    // `wichtigeFunktion()` würde niemals ausgeführt werden, selbst wenn `foo` den wert "1" hätte
+!!~array.indexOf("c");
+// true
 
-    // 3.B.1.2
+!!~array.indexOf("d");
+// false
+javascript// 3.B.2.3
 
-    // Du kannst diese Probleme umgehen, indem du die Typen mit unären - oder + - Operationen erzwingst:
 
-    foo = +document.getElementById("foo-input").value;
-    //    ^ unärer + - Operator konvertiert den rechten Operanden in eine Zahl (Number)
-    // typeof foo;
-    // "number"
+var num = 2.5;
 
-    if ( foo === 1 ) {
+parseInt( num, 10 );
 
-        wichtigeFunktion();
+// هو نفس...
 
-    }
+~~num;
 
-    // `wichtigeFunktion()` würde ausgeführt
-    ```
+num >> 0;
 
-    Hier sind ein paar Fälle in denen Erzwingungen verwendet werden:
+num >>> 0;
 
+// يُرجع 2
 
-    ```javascript
 
-    // 3.B.2.1
+// تذكر أن الأرقام السالبة تُعامل بشكل مختلف...
 
-    var number = 1,
-        string = "1",
-        bool = false;
+var neg = -2.5;
 
-    number;
-    // 1
+parseInt( neg, 10 );
 
-    number + "";
-    // "1"
+// هو نفس...
 
-    string;
-    // "1"
+~~neg;
 
-    +string;
-    // 1
+neg >> 0;
 
-    +string++;
-    // 1
+// يُرجع -2
+// ومع ذلك...
 
-    string;
-    // 2
+neg >>> 0;
 
-    bool;
-    // false
+// يُرجع 4294967294
 
-    +bool;
-    // 0
+<a name="cond">التقييم الشرطي</a>
+javascript// 4.1.1
+// عندما تريد فقط فحص ما إذا كان المصفوفة لها طول، ...
+if ( array.length > 0 ) ...
 
-    bool + "";
-    // "false"
-    ```
+// افحصها هكذا:
+if ( array.length ) ...
 
 
-    ```javascript
-    // 3.B.2.2
+// 4.1.2
+// عندما تريد فقط فحص ما إذا كانت المصفوفة فارغة...
+if ( array.length === 0 ) ...
 
-    var number = 1,
-        string = "1",
-        bool = true;
+// افعلها هكذا:
+if ( !array.length ) ...
 
-    string === number;
-    // false
 
-    string === number + "";
-    // true
+// 4.1.3
+// عندما تريد فحص ما إذا كان النص غير فارغ
+if ( string !== "" ) ...
 
-    +string === number;
-    // true
+// ... افعلها هكذا:
+if ( string ) ...
 
-    bool === number;
-    // false
 
-    +bool === number;
-    // true
+// 4.1.4
+// عندما تريد فحص ما إذا كان النص فارغاً...
+if ( string === "" ) ...
 
-    bool === string;
-    // false
+// ... افعلها هكذا:
+if ( !string ) ...
 
-    bool == !!string;
-    // true
-    ```
 
-    ```javascript
-    // 3.B.2.3
+// 4.1.5
+// عندما تريد فحص ما إذا كانت المرجعية false...
+if ( foo === false ) ...
 
-    var array = [ "a", "b", "c" ];
+// ... استخدم النفي لإجبار تقييم true
+if ( !foo ) ...
 
-    !!~array.indexOf("a");
-    // true
+// ... لكن احذر، هذا سيعمل أيضاً مع 0، ""، null، undefined و NaN
+// إذا كان يجب عليك الاختبار لقيمة false منطقية، افعلها هكذا:
+if ( foo === false ) ...
 
-    !!~array.indexOf("b");
-    // true
+// 4.1.7
+// عندما تريد فحص مرجعية قد تكون null أو undefined، لكن ليس false...
+if ( foo === null || foo === undefined ) ...
 
-    !!~array.indexOf("c");
-    // true
+// ... استفد من ميزة إجبار النوع
+if ( foo == null ) ...
 
-    !!~array.indexOf("d");
-    // false
-    ```
+// تذكر، '==' سيطابق 'null' مع 'null' و 'undefined'، لكن ليس 'false'، "" أو 0
+null == undefined
 
-    ```javascript
-    // 3.B.2.3
+<a name="practical">الأسلوب العملي</a>
+javascript
+// 5.1.1
+// وحدة تطبيقية
 
+(function( global ) {
+  var Module = (function() {
 
-    var num = 2.5;
+    var data = "secret";
 
-    parseInt( num, 10 );
-
-    // ist das Gleiche wie...
-
-    ~~num;
-
-    num >> 0;
-
-    num >>> 0;
-
-    // Gibt 2 zurück
-
-
-    // Denke daran, dass negative Zahlen anders behandelt werden...
-
-    var neg = -2.5;
-
-    parseInt( neg, 10 );
-
-    // Ist das Gleiche wie...
-
-    ~~neg;
-
-    neg >> 0;
-
-    // Gibt 2 zurück
-    // Wie dem auch sei...
-
-    neg >>> 0;
-
-    // Gibt 4294967294 zurück
-
-
-    ```
-
-4. <a name="cond">Bedingte Auswertungen</a>
-
-    ```javascript
-    //4.1.1
-    // Wenn du nur prüfen willst, ob ein Array eine Länge hat, ...
-    if ( array.length > 0 ) ...
-
-    // prüfe es so:
-    if ( array.length ) ...
-
-
-    // 4.1.2
-    // Wenn du nur prüfen willst, ob ein Array leer ist...
-    if ( array.length === 0 ) ...
-
-    // mach es so:
-    if ( !array.length ) ...
-
-
-    // 4.1.3
-    // Wenn du prüfen willst, ob ein String nich leer ist
-    if ( string !== "" ) ...
-
-    // ... mach es so:
-    if ( string ) ...
-
-
-    // 4.1.4
-    // Wenn du prüfen willst, ob ein String leer ist...
-    if ( string === "" ) ...
-
-    // ... mach es so:
-    if ( !string ) ...
-
-
-    // 4.1.5
-    // Wenn du prüfen willst, ob eine Referenz false ist...
-    if ( foo === false ) ...
-
-    // ... nutze die Negierung um eine eine true-Auswertung zu erzwingen
-    if ( !foo ) ...
-
-    // ... aber vorsicht, das würde auch bei 0, "", null, undefined und NaN funktionieren
-    // Wenn du für einen boolsches false testen _musst_, mach's so:
-    if ( foo === false ) ...
-
-    // 4.1.7
-    // Wenn du eine Referenz prüfen möchtest, die möglicherweise null oder undefined, aber NICHT false ist...
-    if ( foo === null || foo === undefined ) ...
-
-    // ... nutze den Vorteil der Typerzwingung
-    if ( foo == null ) ...
-
-    // Denk daran, '==' wird 'null' auf 'null' UND 'undefined' matchen, aber nicht 'false', "" oder 0
-    null == undefined
-
-    ```
-
-
-5. <a name="practical">Praktischer Style</a>
-
-    ```javascript
-
-    // 5.1.1
-    // Ein angewandtes Modul
-
-    (function( global ) {
-      var Module = (function() {
-
-        var data = "secret";
-
-        return {
-          // Eine boolesche Eigenschaft
-          bool: true,
-          // Ein Stringwert
-          string: "a string",
-          // Eine Array-Eigenschaft
-          array: [ 1, 2, 3, 4 ],
-          // Eine Objekteigenschaft
-          object: {
-            lang: "en-Us"
-          },
-          getData: function() {
-            // gibt den Wert von data
-            return data;
-          },
-          setData: function( value ) {
-            // setzt den Wert von data
-            return ( data = value );
-          }
-        };
-      })();
-
-      // Hier könnten weitere Dinge passieren
-
-      // Das Modul im globalen Namensraum verfügbar machen
-      global.Module = Module;
-
-    })( this );
-
-    ```
-
-    ```javascript
-
-    // 5.2.1
-    // Ein angewandter Konstruktor
-
-    (function( global ) {
-
-      function Ctor( foo ) {
-
-        this.foo = foo;
-
-        return this;
-      }
-
-      Ctor.prototype.getFoo = function() {
-        return this.foo;
-      };
-
-      Ctor.prototype.setFoo = function( val ) {
-        return ( this.foo = val );
-      };
-
-
-      // Um den Konstruktor ohne `new` aufzurufen, machst du möglicherweise sowas:
-      var ctor = function( foo ) {
-        return new Ctor( foo );
-      };
-
-
-      // Konstruktor im globalen Namensraum verfügbar machen
-      global.ctor = ctor;
-
-    })( this );
-
-    ```
-
-6. <a name="naming">Bezeichnungen</a>
-
-    Du bist kein Compiler, also versuch nicht, einer zu sein.
-
-    Der folgende Code ist ein Beispiel für entsetzlich schlechte Bezeichnungen:
-
-    ```javascript
-
-    // 6.1.1
-    // Beispielcode mit schlechten Bezeichnungen
-
-    function q(s) {
-      return document.querySelectorAll(s);
-    }
-    var i,a=[],els=q("#foo");
-    for(i=0;i<els.length;i++){a.push(els[i]);}
-    ```
-
-    Du hast ohne Zweifel schon mal solchen Code geschrieben - das hört heute auf.
-
-    Hier ist der gleiche Code, nur klarer, durchdachter und mit einer lesbaren Struktur:
-
-    ```javascript
-
-    // 6.2.1
-    // Beispielcode mit verbesserten Bezeichnungen
-
-    function query( selector ) {
-      return document.querySelectorAll( selector );
-    }
-
-    var idx = 0,
-      elements = [],
-      matches = query("#foo"),
-      length = matches.length;
-
-    for( ; idx < length; idx++ ){
-      elements.push( matches[ idx ] );
-    }
-
-    ```
-
-    Ein paar weitere Punkte bezüglich der Bezeichnungen:
-
-    ```javascript
-
-    // 6.3.1
-    // Strings benennen
-
-    `dog` ist ein String
-
-
-    // 6.3.2
-    // Arrays benennen
-
-    `dogs` ist ein Array bestehend aus `dog` Strings
-
-
-    // 6.3.3
-    // Funktionen, Objekte, Instanzen etc. benennen
-
-    camelCase; Funktions- und var- Deklarationen
-
-
-    // 6.3.4
-    // Konstruktoren und Prototypen benennen
-
-    PascalCase; Konstruktorfunktion
-
-
-    // 6.3.5
-    // Reguläre Ausdrücke benennen
-
-    rDesc = //;
-
-
-    // 6.3.6
-    // Aus dem Google Closure Library Style Guide
-
-    functionNamesLikeThis;
-    variableNamesLikeThis;
-    ConstructorNamesLikeThis;
-    EnumNamesLikeThis;
-    methodNamesLikeThis;
-    SYMBOLIC_CONSTANTS_LIKE_THIS;
-
-
-
-    ```
-
-7. <a name="misc">Sonstiges</a>
-
-    Diese Sektion stellt Ideen und Konzepte dar, die nicht dogmatisch betrachtet werden sollten. Sie sollen fragliche Praktiken fördern, die immer wieder in der JavaScript Programmierung auftauchen.
-
-    A. `switch` Statements sollten vermieden werden.
-
-    Es scheint starke Verbesserungen bei der Ausführung von `switch` Statements im neuesten Firefox und Chrome zu geben.
-    http://jsperf.com/switch-vs-object-literal-vs-module
-
-    https://github.com/rwldrn/idiomatic.js/issues/13
-
-    ```javascript
-
-    // 7.A.1.1
-    // Ein Beispiel Switch Statement
-
-    switch( foo ) {
-      case "alpha":
-        alpha();
-        break;
-      case "beta":
-        beta();
-        break;
-      default:
-        // Fallback
-        break;
-    }
-
-    // 7.A.1.2
-    // Besser sollte man aber ein Objektliteral oder Modul verwenden:
-
-    var switchObj = {
-      alpha: function() {
-        // statements
-        // a return
+    return {
+      // خاصية منطقية
+      bool: true,
+      // قيمة نصية
+      string: "a string",
+      // خاصية مصفوفة
+      array: [ 1, 2, 3, 4 ],
+      // خاصية كائن
+      object: {
+        lang: "en-Us"
       },
-      beta: function() {
-        // statements
-        // a return
+      getData: function() {
+        // تُرجع قيمة data
+        return data;
       },
-      _default: function() {
-        // statements
-        // a return
+      setData: function( value ) {
+        // تضع قيمة data
+        return ( data = value );
       }
     };
+  })();
 
-    var switchModule = (function () {
-      return {
-        alpha: function() {
-          // statements
-          // a return
-        },
-        beta: function() {
-          // statements
-          // a return
-        },
-        _default: function() {
-          // statements
-          // a return
-        }
-      };
-    })();
+  // هنا يمكن أن تحدث أشياء أخرى
+
+  // جعل الوحدة متاحة في النطاق العام
+  global.Module = Module;
+
+})( this );
+javascript
+// 5.2.1
+// منشئ تطبيقي
+
+(function( global ) {
+
+  function Ctor( foo ) {
+
+    this.foo = foo;
+
+    return this;
+  }
+
+  Ctor.prototype.getFoo = function() {
+    return this.foo;
+  };
+
+  Ctor.prototype.setFoo = function( val ) {
+    return ( this.foo = val );
+  };
 
 
-    // 7.A.1.3
-    // Wenn `foo` eine Eigenschaft von `switchObj` oder `switchModule` ist, führe diesen Code hier aus..
+  // لاستدعاء المنشئ بدون `new`، ربما تفعل شيئاً مثل هذا:
+  var ctor = function( foo ) {
+    return new Ctor( foo );
+  };
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+  // جعل المنشئ متاحاً في النطاق العام
+  global.ctor = ctor;
 
-    // Wenn du auf die Werte von `foo` vertraust und weißt, was drin ist,
-    // kannst du die ODER-Prüfung weglassen und den Code einfach nur ausführen:
+})( this );
 
-    switchObj[ foo ]( args );
+<a name="naming">التسمية</a>
+أنت لست مُجمِّعاً (compiler)، فلا تحاول أن تكون واحداً.
+الكود التالي مثال على تسمية سيئة بشكل فظيع:
+javascript
+// 6.1.1
+// مثال على كود بتسمية سيئة
 
-    switchModule[ foo ]( args );
+function q(s) {
+  return document.querySelectorAll(s);
+}
+var i,a=[],els=q("#foo");
+for(i=0;i<els.length;i++){a.push(els[i]);}
+لقد كتبت بلا شك كوداً مثل هذا من قبل - هذا ينتهي اليوم.
+هنا نفس الكود، لكن أوضح وأكثر تفكيراً ومع بنية قابلة للقراءة:
+javascript
+// 6.2.1
+// مثال على كود بتسمية محسنة
 
-    // Dieses Muster sorgt außerdem für Wiederverwendbarkeit von Code
+function query( selector ) {
+  return document.querySelectorAll( selector );
+}
 
-    ```
+var idx = 0,
+  elements = [],
+  matches = query("#foo"),
+  length = matches.length;
 
-    B. Frühzeitige Rückgaben sorgen für lesbareren Code mit einem kleinen Performance-Unterschied
+for( ; idx < length; idx++ ){
+  elements.push( matches[ idx ] );
+}
+بعض النقاط الإضافية حول التسمية:
+javascript
+// 6.3.1
+// تسمية النصوص
 
-    ```javascript
+`dog` هو نص
 
-    // 7.B.1.1
-    // Schlecht:
-    function returnLate( foo ) {
-      var ret;
 
-      if ( foo ) {
-        ret = "foo";
-      } else {
-        ret = "quux";
-      }
-      return ret;
+// 6.3.2
+// تسمية المصفوفات
+
+`dogs` هي مصفوفة تتكون من نصوص `dog`
+
+
+// 6.3.3
+// تسمية الدوال، الكائنات، المثيلات إلخ
+
+camelCase; تصريحات الدوال و var
+
+
+// 6.3.4
+// تسمية المنشئات والنماذج الأولية
+
+PascalCase; دالة المنشئ
+
+
+// 6.3.5
+// تسمية التعبيرات النمطية
+
+rDesc = //;
+
+
+// 6.3.6
+// من دليل أسلوب مكتبة Google Closure
+
+functionNamesLikeThis;
+variableNamesLikeThis;
+ConstructorNamesLikeThis;
+EnumNamesLikeThis;
+methodNamesLikeThis;
+SYMBOLIC_CONSTANTS_LIKE_THIS;
+
+<a name="misc">متفرقات</a>
+هذا القسم يعرض أفكاراً ومفاهيم يجب ألا تُعتبر عقائدية. الهدف منها تشجيع التساؤل حول الممارسات التي تظهر مراراً وتكراراً في برمجة الجافاسكريبت.
+A. يجب تجنب عبارات switch.
+يبدو أن هناك تحسينات قوية في تنفيذ عبارات switch في أحدث إصدارات Firefox و Chrome.
+http://jsperf.com/switch-vs-object-literal-vs-module
+https://github.com/rwldrn/idiomatic.js/issues/13
+javascript
+// 7.A.1.1
+// مثال على عبارة Switch
+
+switch( foo ) {
+  case "alpha":
+    alpha();
+    break;
+  case "beta":
+    beta();
+    break;
+  default:
+    // احتياطي
+    break;
+}
+
+// 7.A.1.2
+// من الأفضل استخدام كائن حرفي أو وحدة:
+
+var switchObj = {
+  alpha: function() {
+    // statements
+    // a return
+  },
+  beta: function() {
+    // statements
+    // a return
+  },
+  _default: function() {
+    // statements
+    // a return
+  }
+};
+
+var switchModule = (function () {
+  return {
+    alpha: function() {
+      // statements
+      // a return
+    },
+    beta: function() {
+      // statements
+      // a return
+    },
+    _default: function() {
+      // statements
+      // a return
     }
-
-    // Gut:
-
-    function returnEarly( foo ) {
-
-      if ( foo ) {
-        return "foo";
-      }
-      return "quux";
-    }
-
-    ```
-
-8. <a name="native">Native & Host Objekte</a>
-
-    Das grundsätzliche Prinzip ist hier:
-
-    ### Mach keinen Unsinn und alles wird gut.
-
-    Um das Ganze noch mehr zu stärken, schaue dir folgende Präsentationen an:
-
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
-
-    https://www.youtube.com/watch?v=xL3xCO7CLNM
+  };
+})();
 
 
-9. <a name="comments">Kommentare</a>
+// 7.A.1.3
+// إذا كان `foo` خاصية في `switchObj` أو `switchModule`، نفذ هذا الكود هنا..
 
-    * Mehrzeilige Kommentare sind gut
-    * Kommentare am Zeilenende sind untersagt!
-    * JSDoc Style Kommentare sind gut, aber erfordern mehr Zeit.
+( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+
+( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+
+// إذا كنت تثق في قيم `foo` وتعرف ما بداخلها،
+// يمكنك حذف فحص OR وتنفيذ الكود فقط:
+
+switchObj[ foo ]( args );
+
+switchModule[ foo ]( args );
+
+// هذا النمط يوفر أيضاً إعادة استخدام الكود
+B. الإرجاع المبكر يجعل الكود أكثر قابلية للقراءة مع فرق أداء طفيف
+javascript
+// 7.B.1.1
+// سيء:
+function returnLate( foo ) {
+  var ret;
+
+  if ( foo ) {
+    ret = "foo";
+  } else {
+    ret = "quux";
+  }
+  return ret;
+}
+
+// جيد:
+
+function returnEarly( foo ) {
+
+  if ( foo ) {
+    return "foo";
+  }
+  return "quux";
+}
+
+<a name="native">الكائنات الأصلية والمضيفة</a>
+المبدأ الأساسي هنا:
+لا تفعل أشياء غبية وكل شيء سيكون بخير.
+لتعزيز هذا المفهوم أكثر، شاهد العرض التقديمي التالي:
+"Everything is Permitted: Extending Built-ins" by Andrew Dupont (JSConf2011, Portland, Oregon)
+https://www.youtube.com/watch?v=xL3xCO7CLNM
+<a name="comments">التعليقات</a>
+
+التعليقات متعددة الأسطر جيدة
+التعليقات في نهاية السطر ممنوعة!
+تعليقات أسلوب JSDoc جيدة، لكنها تتطلب وقتاً أكثر.
 
 
-10. <a name="language">Einsprachiger Code</a>
+<a name="language">الكود أحادي اللغة</a>
+البرامج يجب أن تُكتب باللغة التي يحددها مشرف المشروع، أياً كانت تلك اللغة.
 
-    Programme sollten in der Sprache geschrieben sein, egal um welche Sprache es sich handelt, die der Projektbetreuer vorgibt.
+الملحق
+Comma First.
+أي مشروع يستخدم هذا المستند كدليل أسلوب أساسي لا يقبل تنسيق Comma-First، ما لم يُحدد صراحة من قبل مؤلف المشروع.
 
-## Anhang
-
-### Comma First.
-
-Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet, akzeptiert keine Comma-First-Formatierung, solange es nicht explizit vom Projektautor angegeben wurde.
-
-----------
-
-
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Grundsätze for das schreiben vonkonsequentem und idiomatischem JavaScript</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron und Mitwirkenden</a> ist lizensiert unter  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Basierend auf einer Arbeit unter <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">مبادئ كتابة الجافاسكريبت المتسقة والاصطلاحية</span> من <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">ريك والدرون والمساهمين</a> مرخص تحت <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">رخصة المشاع الإبداعي نَسب المُصنَّف 3.0 غير موطَّنة</a>.<br />مبني على عمل في <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
