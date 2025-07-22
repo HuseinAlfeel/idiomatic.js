@@ -31,9 +31,9 @@
 * Boris Nekezov [github](https://github.com/boris-nekezov)  
 * Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
 
-## 
 
-"كل الكود في أي مشروع برمجي يجب أن يبدو وكأن شخصاً واحداً قام بكتابته، بغض النظر عن عدد المطورين الذين ساهموا فيه."
+
+## "كل الكود في أي مشروع برمجي يجب أن يبدو وكأن شخصاً واحداً قام بكتابته، بغض النظر عن عدد المطورين الذين ساهموا فيه."
 
 ### Das folgende Dokument zeigt Praktiken, die sich in jedem Code, den ich ursprünglich geschrieben habe, wiederfinden. Sämtliche Beiträge für Projekte, die ich kreiert habe, sollten diesen Praktiken folgen.
 
