@@ -519,17 +519,18 @@ if (true) {
     ```
 
  
- E. Anführungszeichen
+E. علامات الاقتباس
 
-    Ob du jetzt einfache oder doppelte Anführungszeichen bevorzugst ist völlig egal. JavaScript parst sie immer gleich. Das Einzige, worauf auf jeden Fall geachtet werden **MUSS**, ist Konsistenz. **Vermische niemals Anführungszeichen innerhalb eines Projekts.** Suche dir einen Stil aus und bleib dabei.
+سواء كنت تفضل علامات الاقتباس المفردة أو المزدوجة فلا يهم على الإطلاق. الجافاسكريبت يفسرها بنفس الطريقة دائماً. الشيء الوحيد الذي **يجب** الانتباه إليه بالتأكيد هو الاتساق. **لا تخلط أبداً علامات الاقتباس داخل مشروع واحد.** اختر أسلوباً والتزم به.
 
-    F. Zeilenenden und leere Zeilen
 
-    Whitespaces können diffs ruinieren. Pre-Commit-Hooks können verwendet werden, um End-Of-Line-Whitespaces zu leere Zeilen zu entfernen.
+F. نهايات الأسطر والأسطر الفارغة
 
-3. <a name="type">Typprüfung</a>
+المسافات البيضاء يمكن أن تدمر الاختلافات (diffs). يمكن استخدام خطافات ما قبل الالتزام (Pre-Commit-Hooks) لإزالة المسافات البيضاء في نهاية الأسطر والأسطر الفارغة.
 
-    A. Primitive Typen
+3. <a name="type">فحص الأنواع</a>
+
+    A. الأنواع الأولية
 
     String:
 
@@ -550,7 +551,7 @@ if (true) {
     Array:
 
         Array.isArray( arrayArtigesObjekt )
-        (wenn möglich)
+                                    (عند الإمكان)    
 
     Node:
 
@@ -566,25 +567,27 @@ if (true) {
 
     undefined:
 
-        Globale Variablen:
+  المتغيرات العامة:
 
             typeof variable === "undefined"
 
-        Lokale Variablen:
+
+    المتغيرات المحلية:
 
             variable === undefined
 
-        Properties:
+            الخصائص:
 
             object.prop === undefined
             object.hasOwnProperty( prop )
             "prop" in object
 
-    B. Gezwungene Typen
+ B. الأنواع المُجبرة
 
-    Betrachten wir folgende Auswirkungen...
 
-    Dieses HTML ist gegeben:
+لنأخذ التأثيرات التالية...
+
+هذا الـ HTML مُعطى:
 
     ```html
 
@@ -595,46 +598,46 @@ if (true) {
 
     // 3.B.1.1
 
-    // `foo` wurde mit dem Wert `0` deklariert und ist vom Typ `number`
+// `foo` تم تعريفه بالقيمة `0` وهو من النوع `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Später im Code musst du `foo` mit einem neuen Wert aus dem input-Element überschreiben
+// لاحقاً في الكود يجب عليك استبدال `foo` بقيمة جديدة من عنصر input
     foo = document.getElementById("foo-input").value;
 
-    // Wenn du jetzt mit `typeof foo` testen möchtest, wird das Ergebnis `string` sein
-    // Das bedeutet, wenn du Logik hast, die `foo` so testet:
+// إذا كنت تريد الآن الاختبار باستخدام `typeof foo`، ستكون النتيجة `string`
+// هذا يعني، إذا كان لديك منطق يختبر `foo` هكذا:
 
     if ( foo === 1 ) {
 
-        wichtigeFunktion();
+        importantFunction();
 
     }
 
-    // `wichtigeFunktion()` würde niemals ausgeführt werden, selbst wenn `foo` den wert "1" hätte
+// `importantFunction()` لن يتم تنفيذها أبداً، حتى لو كان `foo` له القيمة "1"
 
     // 3.B.1.2
 
-    // Du kannst diese Probleme umgehen, indem du die Typen mit unären - oder + - Operationen erzwingst:
+// يمكنك تجنب هذه المشاكل عن طريق إجبار الأنواع باستخدام العمليات الأحادية + أو -:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unärer + - Operator konvertiert den rechten Operanden in eine Zahl (Number)
+//    ^ العامل الأحادي + يحول المعامل الأيمن إلى رقم (Number)
     // typeof foo;
     // "number"
 
     if ( foo === 1 ) {
 
-        wichtigeFunktion();
+    importantFunction();
 
     }
 
-    // `wichtigeFunktion()` würde ausgeführt
+// `importantFunction()` سيتم تنفيذها
     ```
 
-    Hier sind ein paar Fälle in denen Erzwingungen verwendet werden:
+هنا بعض الحالات التي تُستخدم فيها الإجبارات:
 
 
     ```javascript
@@ -729,7 +732,7 @@ if (true) {
 
     parseInt( num, 10 );
 
-    // ist das Gleiche wie...
+// هو نفس...
 
     ~~num;
 
@@ -737,96 +740,96 @@ if (true) {
 
     num >>> 0;
 
-    // Gibt 2 zurück
+// يُرجع 2
 
 
-    // Denke daran, dass negative Zahlen anders behandelt werden...
+// تذكر أن الأرقام السالبة تُعامل بشكل مختلف...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // Ist das Gleiche wie...
+// هو نفس...
 
     ~~neg;
 
     neg >> 0;
 
-    // Gibt 2 zurück
-    // Wie dem auch sei...
+// يُرجع 2
+// ومع ذلك...
 
     neg >>> 0;
 
-    // Gibt 4294967294 zurück
+// يُرجع 4294967294
 
 
     ```
-
-4. <a name="cond">Bedingte Auswertungen</a>
+//**********************************************
+4. <a name="cond">التقييم الشرطي</a>
 
     ```javascript
     //4.1.1
-    // Wenn du nur prüfen willst, ob ein Array eine Länge hat, ...
+    // عندما تريد فقط فحص ما إذا كان المصفوفة لها طول، ...
     if ( array.length > 0 ) ...
 
-    // prüfe es so:
+    // افحصها هكذا:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // Wenn du nur prüfen willst, ob ein Array leer ist...
+    // عندما تريد فقط فحص ما إذا كانت المصفوفة فارغة...
     if ( array.length === 0 ) ...
 
-    // mach es so:
+    // افعلها بهذه الطريقة:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // Wenn du prüfen willst, ob ein String nich leer ist
+    // عندما تريد فحص ما إذا كان النص غير فارغ
     if ( string !== "" ) ...
 
-    // ... mach es so:
+    // ... افعلها هكذا:
     if ( string ) ...
 
 
     // 4.1.4
-    // Wenn du prüfen willst, ob ein String leer ist...
+    // عندما تريد فحص ما إذا كان النص فارغاً...
     if ( string === "" ) ...
 
-    // ... mach es so:
+    // ... افعلها هكذا:
     if ( !string ) ...
 
 
     // 4.1.5
-    // Wenn du prüfen willst, ob eine Referenz false ist...
+    // عندما تريد فحص ما إذا كانت المرجعية false...
     if ( foo === false ) ...
 
-    // ... nutze die Negierung um eine eine true-Auswertung zu erzwingen
+    // ... استخدم النفي لإجبار تقييم true
     if ( !foo ) ...
 
-    // ... aber vorsicht, das würde auch bei 0, "", null, undefined und NaN funktionieren
-    // Wenn du für einen boolsches false testen _musst_, mach's so:
+    // ... لكن احذر، هذا سيعمل أيضاً مع 0، ""، null، undefined و NaN
+    // إذا كان يجب عليك الاختبار لقيمة false منطقية، افعلها هكذا:
     if ( foo === false ) ...
 
     // 4.1.7
-    // Wenn du eine Referenz prüfen möchtest, die möglicherweise null oder undefined, aber NICHT false ist...
+    // عندما تريد فحص مرجعية قد تكون null أو undefined، لكن ليس false...
     if ( foo === null || foo === undefined ) ...
 
-    // ... nutze den Vorteil der Typerzwingung
+    // ... استفد من ميزة إجبار النوع
     if ( foo == null ) ...
 
-    // Denk daran, '==' wird 'null' auf 'null' UND 'undefined' matchen, aber nicht 'false', "" oder 0
+    // تذكر، '==' سيطابق 'null' مع 'null' و 'undefined'، لكن ليس 'false'، "" أو 0
     null == undefined
 
     ```
 
 
-5. <a name="practical">Praktischer Style</a>
+5. <a name="practical">الأسلوب العملي</a>
 
     ```javascript
 
     // 5.1.1
-    // Ein angewandtes Modul
+    // وحدة تطبيقية
 
     (function( global ) {
       var Module = (function() {
@@ -834,30 +837,30 @@ if (true) {
         var data = "secret";
 
         return {
-          // Eine boolesche Eigenschaft
+          // خاصية منطقية Bool
           bool: true,
-          // Ein Stringwert
+          // قيمة نصية String
           string: "a string",
-          // Eine Array-Eigenschaft
+          // خاصية مصفوفة Array
           array: [ 1, 2, 3, 4 ],
-          // Eine Objekteigenschaft
+          // خاصية كائن Object
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // gibt den Wert von data
+            // تُرجع قيمة data
             return data;
           },
           setData: function( value ) {
-            // setzt den Wert von data
+            // تضع قيمة data
             return ( data = value );
           }
         };
       })();
 
-      // Hier könnten weitere Dinge passieren
+      // هنا يمكن أن تحدث أشياء أخرى
 
-      // Das Modul im globalen Namensraum verfügbar machen
+      // جعل الوحدة متاحة في النطاق العام
       global.Module = Module;
 
     })( this );
@@ -867,7 +870,8 @@ if (true) {
     ```javascript
 
     // 5.2.1
-    // Ein angewandter Konstruktor
+    // منشئ تطبيقي // A Practical Constructor
+
 
     (function( global ) {
 
@@ -887,13 +891,13 @@ if (true) {
       };
 
 
-      // Um den Konstruktor ohne `new` aufzurufen, machst du möglicherweise sowas:
+      // لاستدعاء المنشئ بدون `new`، ربما تفعل شيئاً مثل هذا:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // Konstruktor im globalen Namensraum verfügbar machen
+      // جعل المنشئ متاحاً في النطاق العام
       global.ctor = ctor;
 
     })( this );
@@ -902,14 +906,14 @@ if (true) {
 
 6. <a name="naming">Bezeichnungen</a>
 
-    Du bist kein Compiler, also versuch nicht, einer zu sein.
+    أنت لست مُجمِّعاً/مترجماً (compiler)، فلا تحاول أن تكون واحداً.
 
-    Der folgende Code ist ein Beispiel für entsetzlich schlechte Bezeichnungen:
+    الكود التالي مثال على تسمية سيئة بشكل فظيع:
 
     ```javascript
 
     // 6.1.1
-    // Beispielcode mit schlechten Bezeichnungen
+    // مثال على كود بتسمية سيئة
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -918,14 +922,14 @@ if (true) {
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Du hast ohne Zweifel schon mal solchen Code geschrieben - das hört heute auf.
+    لقد كتبت بلا شك كوداً مثل هذا من قبل - هذا ينتهي اليوم.
 
-    Hier ist der gleiche Code, nur klarer, durchdachter und mit einer lesbaren Struktur:
+    هنا نفس الكود، لكن أوضح وأكثر تفكيراً ومع بنية قابلة للقراءة:
 
     ```javascript
 
     // 6.2.1
-    // Beispielcode mit verbesserten Bezeichnungen
+    // مثال على كود بتسمية محسنة
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -942,42 +946,42 @@ if (true) {
 
     ```
 
-    Ein paar weitere Punkte bezüglich der Bezeichnungen:
+    بعض النقاط الإضافية حول التسمية:
 
     ```javascript
 
     // 6.3.1
-    // Strings benennen
+    // تسمية النصوص
 
-    `dog` ist ein String
+    `dog` هو نص
 
 
     // 6.3.2
-    // Arrays benennen
+    // تسمية المصفوفات
 
-    `dogs` ist ein Array bestehend aus `dog` Strings
+    `dogs` هي مصفوفة تتكون من نصوص `dog`
 
 
     // 6.3.3
-    // Funktionen, Objekte, Instanzen etc. benennen
+    // تسمية الدوال، الكائنات، المثيلات إلخ
 
-    camelCase; Funktions- und var- Deklarationen
+    camelCase; // تصريحات الدوال و var
 
 
     // 6.3.4
-    // Konstruktoren und Prototypen benennen
+    // تسمية المنشئات والنماذج الأولية
 
-    PascalCase; Konstruktorfunktion
+    PascalCase; // دالة المنشئ
 
 
     // 6.3.5
-    // Reguläre Ausdrücke benennen
+    // تسمية التعبيرات النمطية
 
     rDesc = //;
 
 
     // 6.3.6
-    // Aus dem Google Closure Library Style Guide
+    // من دليل أسلوب مكتبة Google Closure
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -992,11 +996,11 @@ if (true) {
 
 7. <a name="misc">Sonstiges</a>
 
-    Diese Sektion stellt Ideen und Konzepte dar, die nicht dogmatisch betrachtet werden sollten. Sie sollen fragliche Praktiken fördern, die immer wieder in der JavaScript Programmierung auftauchen.
+    هذا القسم يعرض أفكاراً ومفاهيم يجب ألا تُعتبر عقائدية. الهدف منها تشجيع التساؤل حول الممارسات التي تظهر مراراً وتكراراً في برمجة الجافاسكريبت.
 
-    A. `switch` Statements sollten vermieden werden.
+    A. يجب تجنب عبارات `switch`.
 
-    Es scheint starke Verbesserungen bei der Ausführung von `switch` Statements im neuesten Firefox und Chrome zu geben.
+    يبدو أن هناك تحسينات قوية في تنفيذ عبارات `switch` في أحدث إصدارات Firefox و Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
     https://github.com/rwldrn/idiomatic.js/issues/13
@@ -1004,7 +1008,7 @@ if (true) {
     ```javascript
 
     // 7.A.1.1
-    // Ein Beispiel Switch Statement
+    // مثال على عبارة Switch
 
     switch( foo ) {
       case "alpha":
@@ -1019,7 +1023,7 @@ if (true) {
     }
 
     // 7.A.1.2
-    // Besser sollte man aber ein Objektliteral oder Modul verwenden:
+    // من الأفضل استخدام كائن حرفي أو وحدة:
 
     var switchObj = {
       alpha: function() {
@@ -1055,29 +1059,29 @@ if (true) {
 
 
     // 7.A.1.3
-    // Wenn `foo` eine Eigenschaft von `switchObj` oder `switchModule` ist, führe diesen Code hier aus..
+    // إذا كان `foo` خاصية في `switchObj` أو `switchModule`، نفذ هذا الكود هنا..
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-    // Wenn du auf die Werte von `foo` vertraust und weißt, was drin ist,
-    // kannst du die ODER-Prüfung weglassen und den Code einfach nur ausführen:
+    // إذا كنت تثق في قيم `foo` وتعرف ما بداخلها،
+    // يمكنك حذف فحص OR وتنفيذ الكود فقط:
 
     switchObj[ foo ]( args );
 
     switchModule[ foo ]( args );
 
-    // Dieses Muster sorgt außerdem für Wiederverwendbarkeit von Code
+    // هذا النمط يوفر أيضاً إعادة استخدام الكود
 
     ```
 
-    B. Frühzeitige Rückgaben sorgen für lesbareren Code mit einem kleinen Performance-Unterschied
+    B. الإرجاع المبكر يجعل الكود أكثر قابلية للقراءة مع فرق أداء طفيف
 
     ```javascript
 
     // 7.B.1.1
-    // Schlecht:
+    // سيء:
     function returnLate( foo ) {
       var ret;
 
@@ -1089,7 +1093,7 @@ if (true) {
       return ret;
     }
 
-    // Gut:
+    // جيد:
 
     function returnEarly( foo ) {
 
@@ -1101,13 +1105,13 @@ if (true) {
 
     ```
 
-8. <a name="native">Native & Host Objekte</a>
+8. <a name="native">الكائنات الأصلية والمضيفة</a>
 
-    Das grundsätzliche Prinzip ist hier:
+    المبدأ الأساسي هنا:
 
-    ### Mach keinen Unsinn und alles wird gut.
+    ### لا تفعل أشياء غير منطقية وكل شيء سيكون بخير.
 
-    Um das Ganze noch mehr zu stärken, schaue dir folgende Präsentationen an:
+    لتعزيز هذا المفهوم أكثر، شاهد العرض التقديمي التالي:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -1116,20 +1120,20 @@ if (true) {
 
 9. <a name="comments">Kommentare</a>
 
-    * Mehrzeilige Kommentare sind gut
-    * Kommentare am Zeilenende sind untersagt!
-    * JSDoc Style Kommentare sind gut, aber erfordern mehr Zeit.
+    * التعليقات متعددة الأسطر جيدة
+    * التعليقات في نهاية السطر ممنوعة!
+    * تعليقات أسلوب JSDoc جيدة، لكنها تتطلب وقتاً أكثر.
 
 
-10. <a name="language">Einsprachiger Code</a>
+10. <a name="language">الكود أحادي اللغة</a>
 
-    Programme sollten in der Sprache geschrieben sein, egal um welche Sprache es sich handelt, die der Projektbetreuer vorgibt.
+    البرامج يجب أن تُكتب باللغة التي يحددها مشرف المشروع، أياً كانت تلك اللغة.
 
-## Anhang
+## الملحق
 
 ### Comma First.
 
-Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet, akzeptiert keine Comma-First-Formatierung, solange es nicht explizit vom Projektautor angegeben wurde.
+أي مشروع يستخدم هذا المستند كدليل أسلوب أساسي لا يقبل تنسيق Comma-First، ما لم يُحدد صراحة من قبل مؤلف المشروع.
 
 ----------
 
